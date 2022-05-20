@@ -1,0 +1,12 @@
+{% extends 'bibliotheque/main.html' %}
+{% block title %}
+L'index de la page concernat les types de metal.
+{% endblock %}
+
+{% block content %}
+    <p>{{groupedemetal.nom_du_groupe}} crée le {{groupedemetal.annee_de_creation}}</p>
+
+    <p>
+        {{groupedemetal.courte_description}}
+    </p>
+{% endblock %}

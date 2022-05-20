@@ -1,0 +1,20 @@
+{% extends 'bibliotheque/main.html' %}
+{% block title %}
+Bienvenue sur Wikital, le wiki qui regroupe les types et les groupe de metal dans le monde.
+{% endblock %}
+
+{% block titre %}
+<h1> Bienvenue sur Wikital, le wiki qui regroupe les types et les groupe de metal dans le monde. </h1>
+{% endblock %}
+
+{% block nav %}
+<nav class="navbarre"><a href="/groupedemetal/indextypedemetal/">Type de metal</a> <a href="/groupedemetal/indexgroupedemetal/">Groupe de metal</a> <a href="/groupedemetal/formulairetypedemetal/">Ajouter un type de metal</a> <a href="/groupedemetal/formulaire/">Ajouter un groupe de metal</a> </nav>
+{% endblock %}
+
+{% block content %}
+<ol>
+    {%for l in liste %}
+        <p class="nav"><li> {{l}} <a href="/groupedemetal/affiche/{{l.id}}/"> Plus d'informations </a> <a href="/groupedemetal/update/{{l.id}}/"> Mettre à jour </a> <a href="/groupedemetal/delete/{{l.id}}/"> Supprimer </a></li></p>
+    {% endfor %}
+</ol>
+{% endblock %}

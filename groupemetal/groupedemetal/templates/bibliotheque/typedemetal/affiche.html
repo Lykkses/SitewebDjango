@@ -1,0 +1,18 @@
+{% extends 'bibliotheque/main.html' %}
+{% block title %}
+L'index de la page concernat les types de metal.
+{% endblock %}
+
+{% block content %}
+<h1>Le {{typedemetal.registre}}.</h1>
+<p>Le {{typedemetal.registre}} est le registre qui a donné naissance au {{typedemetal.sous_registre}}.</p>
+<p>La description de {{typedemetal.registre}} est : {{typedemetal.resume}} </p>
+
+
+<ol>
+    Liste des groupes de la catégorie :
+    {% for l in liste %}
+        <li> {{l}}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
