@@ -52,5 +52,12 @@ p{
 text-align:justify;
 widht: 45%;
 height: 30%;
-padding: 3px 3px;
+padding-left: 20%;
+padding-right: 20%;
+padding-top: 5%;
+}
+
+h1{
+text-decoration:underline;
+text-align: center;
 }

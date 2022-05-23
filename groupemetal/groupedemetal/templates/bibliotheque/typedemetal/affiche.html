@@ -6,13 +6,13 @@ L'index de la page concernat les types de metal.
 {% block content %}
 <h1>Le {{typedemetal.registre}}.</h1>
 <p>Le {{typedemetal.registre}} est le registre qui a donné naissance au {{typedemetal.sous_registre}}.</p>
-<p>La description de {{typedemetal.registre}} est : {{typedemetal.resume}} </p>
+<p>La description de {{typedemetal.sous_registre}} est : {{typedemetal.resume}} </p>
 
 
 <ol>
     Liste des groupes de la catégorie :
     {% for l in liste %}
-        <li> {{l}}</li>
+        <li> {{groupedemetal.nom_du_groupe}}</li>
     {% endfor %}
 </ol>
 {% endblock %}

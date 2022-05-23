@@ -15,7 +15,7 @@ Type de metal
 {% block content %}
 <ol>
     {%for l in liste %}
-        <li> {{l}} <a href="/groupedemetal/affichetypedemetal/{{l.id}}/"> affichage </a> <a href="/groupedemetal/updatetypedemetal/{{l.id}}/"> update </a> <a href="/groupedemetal/deletetypedemetal/{{l.id}}/"> delete </a></li>
+        <li> {{l}} <a href="/groupedemetal/affichetypedemetal/{{l.id}}/"> Plus d'informations </a> <a href="/groupedemetal/updatetypedemetal/{{l.id}}/"> Mettre à jour </a> <a href="/groupedemetal/deletetypedemetal/{{l.id}}/"> Suppression </a></li>
     {% endfor %}
 </ol>
 {% endblock %}
